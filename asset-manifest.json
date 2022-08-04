@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.498dbac6.css",
+    "main.js": "/static/js/main.004ce9af.js",
+    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
+    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.ea98e12d2d58747f9fc5.woff2",
+    "static/media/close-up-patient-with-tubes-her-arm-squeezing-ball-her-hand-while-donating-blood_249974-4241.webp": "/static/media/close-up-patient-with-tubes-her-arm-squeezing-ball-her-hand-while-donating-blood_249974-4241.008c6d45e14eeb9551ab.webp",
+    "index.html": "/index.html",
+    "main.498dbac6.css.map": "/static/css/main.498dbac6.css.map",
+    "main.004ce9af.js.map": "/static/js/main.004ce9af.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.498dbac6.css",
+    "static/js/main.004ce9af.js"
+  ]
+}
