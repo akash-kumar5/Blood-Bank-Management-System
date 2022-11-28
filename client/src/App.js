@@ -4,7 +4,7 @@ import Footer from './Folder/Footer';
 import Home from './Folder/Home';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import About from './Folder/About';
-import RegisterDonor from './Folder/RegisterDonor';
+import RegisterDonor from './Folder/Register';
 import Eligible from './Folder/Eligible';
 import Bloodcamp from './Folder/Bloodcamp';
 import DonorLogin from './Folder/DonorLogin';
@@ -30,7 +30,7 @@ function App() {
       <Route path='/' element={<Home />} />
 
       <Route path='/src/Folder/About.js' element={<About />} />
-      <Route path='/RegisterDonor' element={ <RegisterDonor />}/>
+      <Route path='/Register' element={ <RegisterDonor />}/>
       <Route path='/src/Folder/Eligible.js' element={<Eligible />} />
       <Route path='/src/Folder/Bloodcamp.js' element={<Bloodcamp />} />
       <Route path='/src/Folder/DonorLogin.js' element={<DonorLogin />} />

@@ -10,20 +10,7 @@ const dbConnect = require("./db/dbConnect");
 const jwt = require("jsonwebtoken");
 const auth = require("./auth");
 
-dbConnect();
-app.use((req, res, next) => {
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    res.setHeader(
-      "Access-Control-Allow-Headers",
-      "Origin, X-Requested-With, Content, Accept, Content-Type, Authorization"
-    );
-    res.setHeader(
-      "Access-Control-Allow-Methods",
-      "GET, POST, PUT, DELETE, PATCH, OPTIONS"
-    );
-    next();
-  });
-  
+
 
 const app = express();
 
@@ -54,6 +41,20 @@ app.use(passport.session());
 //     console.log("DB connected");
 //   }
 // );
+dbConnect();
+app.use((req, res, next) => {
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader(
+      "Access-Control-Allow-Headers",
+      "Origin, X-Requested-With, Content, Accept, Content-Type, Authorization"
+    );
+    res.setHeader(
+      "Access-Control-Allow-Methods",
+      "GET, POST, PUT, DELETE, PATCH, OPTIONS"
+    );
+    next();
+  });
+  
 
 
 //Routes
@@ -77,7 +78,7 @@ app.get("/", (req, res) => {
 // });
 
 // login endpoint
-app.post("/login", (request, response) => {
+app.post("/Login", (request, response) => {
     // check if email exists
     User.findOne({ email: request.body.email })
   
@@ -142,7 +143,7 @@ app.get("/free-endpoint", (request, response) => {
     response.json({ message: "You are authorized to access me" });
   });
 
-app.post("/Signup", (req, res) => {
+app.post("/Register", (req, res) => {
   const { fname, lname, email, password } = req.body;
   User.findOne({ email: email }, (err, user) => {
     if (user) {

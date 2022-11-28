@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.css';
-import RegisterDonor from './RegisterDonor';
+import Register from './Register';
 
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import Home from './Home';
@@ -33,7 +33,7 @@ const Header = () => {
                 DONOR
               </button>
               <ul className="dropdown-menu text-dark">
-                <li><Link className="dropdown-item text-dark" to="/RegisterDonor">Register as a Donor</Link></li>
+                <li><Link className="dropdown-item text-dark" to="/Register">Register as a Donor</Link></li>
                 {/* <li><Link className="dropdown-item text-dark" to="/src/Folder/DonorLogin.js">Donor Login</Link></li> */}
                 <li><Link className="dropdown-item text-dark" to="/src/Folder/Eligible.js">Eligibility</Link></li>
                 <li><Link className="dropdown-item text-dark" to="/src/Folder/Bloodcamp.js">View Blood Camp</Link></li>

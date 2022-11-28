@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import {Form , Button} from 'react-bootstrap'
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -16,7 +17,7 @@ function Login() {
   return (
     <div className=" m-5 p-5 ">
       <div className="m-auto">
-        <form action="" onSubmit={submitThis}>
+        <Form action="" onSubmit={submitThis}>
           <div>
             <Form.Group controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
@@ -36,7 +37,7 @@ function Login() {
           >
             Submit
           </Button>
-        </form>
+        </Form>
       </div>
     </div>
   );
